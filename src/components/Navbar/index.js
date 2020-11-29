@@ -1,10 +1,10 @@
 import React from 'react'
-import {Nav, NavLink, NavMenu, NavBtn, NavBtnLink, Logo} from './NavbarElements'
+import {Nav, NavLink, NavMenu, NavBtn, NavBtnLink, Logo, Git} from './NavbarElements'
 
 const Navbar = () => {
     return (
         <Nav>
-            <Logo href="https://www.google.com" className="Logo">
+            <Logo href="https://github.com/legendof17" className="Logo">
                 <h1>LO17</h1>    
             </Logo> 
             <NavLink to="/" activeStyle>
@@ -12,16 +12,16 @@ const Navbar = () => {
             </NavLink>
             {/* <Bars /> */}
             <NavMenu>
-                <NavLink to="/howtouse" activeStyle>
+                <NavLink to="/weather" activeStyle>
                     Weather?
                 </NavLink>
             </NavMenu>
             {/* <NavBtn>
                 <NavBtnLink to='/signin'>Sign In</NavBtnLink>
              </NavBtn> */}
-            <Logo href="https://www.google.com">
+            <Git href="https://github.com/legendof17/my-city-weather">
                 <h3>GitHub</h3>    
-            </Logo>
+            </Git>
         </Nav>
     )
 }

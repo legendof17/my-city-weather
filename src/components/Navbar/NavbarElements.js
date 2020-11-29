@@ -15,6 +15,24 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.a`
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: #ff0088;
+    color: #441111;
+  }
+`;
+
+export const Git = styled.a`
+  background-color: #000;
   color: #fff;
   display: flex;
   align-items: center;
@@ -46,7 +64,7 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 720px) {
     display: block;
     position: absolute;
     top: 0;
@@ -69,7 +87,7 @@ export const NavMenu = styled.div`
   width: 100vw;
   white-space: nowrap;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 720px) {
     display: none;
   }
 `;

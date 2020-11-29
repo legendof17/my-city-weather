@@ -10,9 +10,10 @@ export const Weather = () => {
             alignItems: 'center',
             height: '90vh',
             textAlign: 'center',
+            width: '100%',
           }}
           >
-            <h1><Weatherdata /></h1>
+            <Weatherdata />
         </div>
     )
 }
