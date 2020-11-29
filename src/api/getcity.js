@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { Getwoed } from './getwoed';
+import { Getwoeid } from './getwoeid';
 
 async function Getcity(ip) {
     const res = await axios('https://freegeoip.app/json/' + ip );
-    Getwoed(res.data.city);
+    Getwoeid(res.data.city);
     // console.log(res.data.city);
 }
 
