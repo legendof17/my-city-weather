@@ -1,5 +1,7 @@
 import React from 'react';
+import Getip from '../api/getip';
 
+Getip();
 export const Home = () => {
     return (
         <div
@@ -11,6 +13,7 @@ export const Home = () => {
           }}
           >
           <h1>Home World</h1>
+          {/* <Getcity /> */}
         </div>
     )
 }
