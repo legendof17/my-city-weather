@@ -1,9 +1,9 @@
 import React from 'react';
-import Getweather from '../api/getweather';
+// import Getweather from '../api/getweather';
 // import Getip from '../api/getip';
 
 // Getip();
-Getweather();
+// Getweather();
 export const Home = () => {
     return (
         <div
@@ -14,7 +14,7 @@ export const Home = () => {
             height: '90vh'
           }}
           >
-          <h1>Home World</h1>
+          <h1>Home World<br /></h1>
           {/* <Getcity /> */}
         </div>
     )

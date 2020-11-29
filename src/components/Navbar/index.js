@@ -13,7 +13,7 @@ const Navbar = () => {
             {/* <Bars /> */}
             <NavMenu>
                 <NavLink to="/howtouse" activeStyle>
-                    Use?
+                    Weather?
                 </NavLink>
             </NavMenu>
             {/* <NavBtn>

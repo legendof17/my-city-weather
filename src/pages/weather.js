@@ -1,18 +1,20 @@
 import React from 'react'
+import Weatherdata from '../components/weatherdata'
 
-export const Howtouse = () => {
+export const Weather = () => {
     return (
         <div
           style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '90vh'
+            height: '90vh',
+            textAlign: 'center',
           }}
           >
-            <h1>How to use?</h1>
+            <h1><Weatherdata /></h1>
         </div>
     )
 }
 
-export default Howtouse;
+export default Weather;

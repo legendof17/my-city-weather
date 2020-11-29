@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
-import Howtouse from './pages/howtouse';
+import Weather from './pages/weather';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/howtouse' exact component={Howtouse} />
+        <Route path='/howtouse' exact component={Weather} />
       </Switch>
     </Router>
   );
