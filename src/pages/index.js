@@ -1,7 +1,9 @@
 import React from 'react';
-import Getip from '../api/getip';
+import Getweather from '../api/getweather';
+// import Getip from '../api/getip';
 
-Getip();
+// Getip();
+Getweather();
 export const Home = () => {
     return (
         <div

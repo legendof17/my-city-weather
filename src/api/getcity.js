@@ -1,10 +1,11 @@
 import axios from 'axios';
-import { Getwoeid } from './getwoeid';
+import Getip from './getip';
+// import { Getwoeid } from './getwoeid';
 
-async function Getcity(ip) {
+export default async function Getcity() {
+    const ip = await Getip();
     const res = await axios('https://freegeoip.app/json/' + ip );
-    Getwoeid(res.data.city);
+    return res.data.city;
+    // Getwoeid(res.data.city);
     // console.log(res.data.city);
 }
-
-export default Getcity

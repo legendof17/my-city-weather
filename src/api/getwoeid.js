@@ -1,8 +1,11 @@
 import axios from 'axios';
-import { Getweather } from './getweather'
+import Getcity from './getcity';
+// import { Getweather } from './getweather'
 
-export async function Getwoeid(city) {
+export default async function Getwoeid() {
+    const city = await Getcity();
     const res = await axios('https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=' + city);
-    Getweather(res.data[0].woeid);
+    return res.data[0].woeid;
+    // Getweather(res.data[0].woeid);
     // console.log(res.data[0].woeid);
 }
