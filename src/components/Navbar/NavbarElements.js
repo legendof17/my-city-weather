@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1600px) / 2);
+  padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;  
 `;
 
@@ -30,7 +30,7 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  // padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 
@@ -42,8 +42,10 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
+  transition: all 0.2s ease-in-out;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 568px) {
+    transition: all 0.2s ease-in-out;
     position: absolute;
     top: 0;
     right: 0;
@@ -57,8 +59,10 @@ export const NavMenu = styled.div`
   display: flex;
   align-right: center;
   margin-right: 24px;
+  transition: all 0.2s ease-in-out;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 568px) {
+    transition: all 0.2s ease-in-out;
     display: none;
   }
 `;
