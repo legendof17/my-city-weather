@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Getweather from '../api/getweather';
+import Typical from 'react-typical';
 import styled from 'styled-components';
 
 export default class Weatherdata extends Component {
@@ -30,6 +31,11 @@ async componentDidMount() {
     })
 }
 
+loadinganim = {
+    a : 'loading.\\', 
+    b : 'loading.|',
+    c : 'loading./',
+    d : 'loading.-'};
     render() {
         // var divstyle = {
         //     backgroundImage: 'url(' + this.state.image + ')',
@@ -40,7 +46,13 @@ async componentDidMount() {
             // <div style={divstyle} >
             <div>
                 {this.state.loading || !this.state.weather ? (
-                    <div><h1>loading...</h1></div>
+                    // <div><h1>loading...</h1></div>
+                    
+                    <div><h1><Typical 
+                        loop={Infinity}
+                        wrapper="b"
+                        steps={[this.loadinganim.a, 50, this.loadinganim.b, 50, this.loadinganim.c, 50, this.loadinganim.d, 50]} /></h1>
+                    </div>
                 ) : (
                     <div>
                         <div style={{'margin-top': '10px', 'margin-bottom': '10px'}}>

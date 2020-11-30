@@ -16,7 +16,17 @@ export const Home = () => {
           }}
           >
           {/* <h1>Home World<br /></h1> */}
-          <Typical loop={Infinity} wrapper="b" steps={['Hello World..! 👋🏻', 250, 'Rotate your phone 🔄', 300, 'To see "magic whether button" 🕷️', 600]} />
+          <h1><Typical 
+            loop={Infinity} 
+            wrapper="b" 
+            steps={[
+              'Hello World.', 100,
+              'Hello World..', 100, 
+              'Hello World..!', 100, 
+              'Hello World..! 🎃', 250, 
+              'Rotate your phone 🔄', 300, 
+              'To see "magic Weather? button" 🕷️', 600
+            ]} /></h1>
           {/* <Getcity /> */}
         </div>
     )
