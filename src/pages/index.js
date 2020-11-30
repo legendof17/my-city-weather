@@ -16,7 +16,7 @@ export const Home = () => {
           }}
           >
           {/* <h1>Home World<br /></h1> */}
-          <h1><Typical 
+          <h1 style={{textAlign: 'center'}}><Typical 
             loop={Infinity} 
             wrapper="b" 
             steps={[
