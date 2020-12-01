@@ -1,5 +1,6 @@
 {
   "name": "my-city-weather",
+  "homepage": "https://legendof17.github.io/my-city-weather/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
