@@ -67,7 +67,7 @@ loadinganim = {
                                 <div><b>Prediction</b> : {this.state.predictability}%</div>
                                 <hr />
                                 <b>Temperature:</b>
-                                <div><b>Min</b> : {this.state.min_temp}°C  |  <b>Max</b> : {this.state.max_temp}°C</div>
+                                <div><b>Min</b> : {Math.round(this.state.min_temp * 10) / 10}°C  |  <b>Max</b> : {Math.round(this.state.max_temp * 10) / 10}°C</div>
                             </div>
                         </div>
                     </div>
