@@ -8,7 +8,7 @@ import Weather from './pages/weather';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/my-city-weather'>
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
