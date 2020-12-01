@@ -8,12 +8,13 @@ import Weather from './pages/weather';
 
 function App() {
   return (
-    <Router basename='/my-city-weather'>
+    // <Router basename={process.env.PUBLIC_URL}>
+    <Router basename='/'>
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/weather' exact component={Weather} />
-        <Redirect path='*' to='/' />
+        <Redirect path='/*' to='/' />
       </Switch>
     </Router>
   );
